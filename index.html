@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia Git e GitHub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #24292e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #00397a;
+    }
+
+    pre {
+      background-color: #eaeaea;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    footer {
+      background-color: #24292e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Guia sobre Git e GitHub</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>O que é o Git</h2>
+      <p>Git é um sistema de controle de versão distribuído usado para rastrear mudanças no código-fonte durante o desenvolvimento de software. Ele permite que múltiplos desenvolvedores trabalhem no mesmo projeto juntos.</p>
+    </section>
+
+    <section>
+      <h2>O que é o GitHub</h2>
+      <p>GitHub é uma plataforma de hospedagem de código-fonte que utiliza o Git como sistema de versionamento. Ele oferece ferramentas para ajudar, revisão de código, issues, entre outros recursos para desenvolvimento em equipe.</p>
+    </section>
+
+    <section>
+      <h2>Diferenças entre Git e GitHub</h2>
+      <ul>
+        <li><strong>Git</strong> é uma ferramenta de versionamento local.</li>
+        <li><strong>GitHub</strong> é uma plataforma online para hospedar repositórios Git.</li>
+        <li>Você pode usar o Git sem o GitHub, mas o GitHub depende do Git para funcionar.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Principais comandos Linux para usar o Git Bash</h2>
+      <pre>
+cd        # Navegar entre diretórios
+ls        # Listar arquivos
+pwd       # Exibir o caminho atual
+mkdir     # Criar diretórios
+touch     # Criar arquivos
+rm        # Remover arquivos ou diretórios
+clear     # Limpar o terminal
+      </pre>
+    </section>
+
+    <section>
+      <h2>Comandos Linux presentes no README do repositório</h2>
+      <p>Repositório: <a href="https://github.com/caixetovisk/aula_git" target="_blank">aula_git</a></p>
+      <pre>
+git init
+git add .
+git commit -m "mensagem"
+git remote add origin link
+git push -u origin main
+      </pre>
+    </section>
+
+    <section>
+      <h2>Como criar um repositório no GitHub</h2>
+      <ol>
+        <li>Acesse o GitHub e faça login.</li>
+        <li>Clique em "New repository".</li>
+        <li>Preencha o nome do repositório e defina se será público ou privado.</li>
+        <li>Clique em "Create repository".</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Como ligar a um projeto existente na máquina</h2>
+      <pre>
+git init
+git remote add origin https://github.com/usuario/repositorio.git
+git add .
+git commit -m "Primeiro commit"
+git push -u origin main
+      </pre>
+    </section>
+
+    <section>
+      <h2>Como gerar uma versão com Git</h2>
+      <pre>
+git commit -m "Descrição da nova versão"
+git tag -a v1.0 -m "Versão 1.0"
+      </pre>
+    </section>
+
+    <section>
+      <h2>Como enviar da máquina para o GitHub</h2>
+      <pre>
+git push origin main
+      </pre>
+    </section>
+  </main>
+
+  <footer>
+    Luísa Mondardo Lemos
+  </footer>
+
+</body>
+</html>
